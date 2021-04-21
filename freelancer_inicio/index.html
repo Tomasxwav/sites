@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--Cosas que el programa lee pero no es parte del front-end-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomásxwav Services</title>
+
+    <!--Muestra un mensaje de puto-->
+    <script> 
+		function showMessage(){
+		alert("Puto");
+		}
+    </script>
+
+    <link rel="preload" href="css styles/normalize.css" as="style"> <!--para mayor velocidad de carga-->
+    <link rel="stylesheet" href="css styles/normalize.css"> <!--Normaliza en todos los navegadores -->
+
+    <link rel="preload" href="css styles/styles.css" as="style"> <!--para mayor velocidad de carga-->
+    <link rel="stylesheet" href="css styles/styles.css"> <!--Crear el ambiente general css - evita tener que crear
+    la etiqueta <style> en cada archivo-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <!--Link de google fonts para añadir fuentes a css. -->
+
+
+</head>
+
+<body>  <!--Es todo el front-end--> <!--bg color es un atributo para cambiar el color-->
+    
+    <header> <!--Cabecera-->
+        <h1 class="titulo">Tomás Martinez <span>Freelancer
+        </span><!--Separa dos textos en un mismo h1 o renglon-->
+        </h1><!--Ordena los headlines por prioridad del 1 al 6-->
+        <!--<u>Underline-->
+    </header>
+    
+    <div class="nav-bg">
+        <nav class="NavegacionPrincipal contenedor"> <!--Panel de navegacion-->
+            <a href="#" onclick="showMessage(prompt);">Clickeame uwu</a>
+            <a href="#" onclick="showMessage();">Clickeame uwu</a>
+            <a href="#" onclick="showMessage();">Clickeame uwu</a>
+            <a href="http://pornhub.com/" onclick="showMessage();">Aqui no clickes</a>
+        </nav>
+    </div>
+
+    <section class= "hero"> <!--Seccion (Sirve para agrupar algo que no es ni header, main, footer, etc, se usa antes que div)-->
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo web Freelancer</h2>
+
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#69e4ec" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="3 7 9 4 15 7 21 4 21 17 15 20 9 17 3 20 3 7" />
+                    <line x1="9" y1="4" x2="9" y2="17" />
+                    <line x1="15" y1="7" x2="15" y2="20" />
+                </svg>
+                Monterrey, N.L.
+            </p>
+            <a class= "boton" href="#">Contacto</a>
+        </div>
+    </section>
+
+
+    <main class="contenedor"> <!--Lo principal de la pagina-->
+        <h2>Mis servicios</h2>
+
+        <div class="servicios">
+
+            <section class="servicio">
+                <h3>Diseño web</h3>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bulb-off" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#69e4ec" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+                        <line x1="9.7" y1="17" x2="14.3" y2="17" />
+                    </svg> <!--Imagenes de tabler Icons-->
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, 
+                facilis? Culpa, consequuntur impedit voluptatem.</p>
+            </section>
+
+            <section class="servicio">
+                <h3>Aplicaciones web</h3>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#69e4ec" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="6" height="6" rx="1" />
+                        <rect x="4" y="14" width="6" height="6" rx="1" />
+                        <rect x="14" y="14" width="6" height="6" rx="1" />
+                        <line x1="14" y1="7" x2="20" y2="7" />
+                        <line x1="17" y1="4" x2="17" y2="10" />
+                    </svg>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, 
+                facilis? Culpa, consequuntur impedit voluptatem.</p>
+            </section>
+
+            <section class="servicio">
+                <h3>E-commerce</h3>
+                <div class="icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#69e4ec" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="3" y1="21" x2="21" y2="21" />
+                        <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+                        <line x1="5" y1="21" x2="5" y2="10.85" />
+                        <line x1="19" y1="21" x2="19" y2="10.85" />
+                        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                    </svg>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, 
+                facilis? Culpa, consequuntur impedit voluptatem.</p>
+            </section>  
+        </div>
+    </main >
+
+<!--Error-->
+    
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario"> <!--Para crear un formulario 1-->
+            <fieldset> <!--Para crear un formulario 2-->
+                <legend>Contactame llenando los campos</legend><!--Titulo del formulario-->
+                <div class="contenedor-campos">
+                    <div class="campos"> <!--Agrupar secciones del formulario (en este caso)-->
+                        <label for="">Nombre</label>
+                        <input type="text" class="imput-text" placeholder="Tu Nombre">
+                    </div>
+                
+                    <div class="campos">
+                        <label for="">Telefono</label>
+                        <input type="tel" class="imput-text" placeholder="Tu Telefono">
+                    </div>
+    
+                    <div class="campos">
+                        <label for="">Correo</label>
+                        <input type="email" class="imput-text" placeholder="Tu email">
+                    </div>
+
+                    <div class="campos">
+                        <label for="">Mensaje</label>
+                        <textarea name="" class="imput-text" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="flex alinear-derecha">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+    
+    <footer> <!--Pie de pagina-->
+        <center><p>Todos los derechos reservados Tomasxwav</p></center>
+    </footer>
+    
+</body>
+
+</html>
